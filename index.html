@@ -1,0 +1,89 @@
+<html>
+
+
+<head>
+    
+    <title> al nahda schools Todo app </title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <script src="https://kit.fontawesome.com/8e7c793750.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="section-center">
+        <div class="todo-form">
+            <div class="todo-img">
+                <img src="images.png" alt="al nahda national school">
+            </div>
+            
+            <h3> To Do List </h3>
+            <div class="form-control">
+                <input type="text" name="todo-list" id="todo-input" placeholder="e.g. do some homeworks"> </input>
+                <input type="submit" class="add-btn" value="Add"></input>
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+
+            <button type="button" class="clear-btn">Clear all Items</button>
+        </div>
+        <div class="todo-container">
+            <div class="todo-list ">
+              
+
+                <div class="todo-item">
+                    <div class="todo-text">
+                        <input type="checkbox" name="todo-checkbox" id="todo-checkbox-1" value="checked" />
+                        <label class="todo-title" for="todo-checkbox-1" data-id="date"> todo 1</label>
+                    </div>
+
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn"></button>
+                        <button type="button" class="delete-btn"></button>
+                    </div>
+                </div>
+                <div class="todo-item">
+                    <div class="todo-text">
+                        <input type="checkbox" name="todo-checkbox" id="todo-checkbox-2" />
+                        <label class="todo-title" for="todo-checkbox-2" data-id="date"> todo 2</label>
+                    </div>
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn"></button>
+                        <button type="button" class="delete-btn"></button>
+                    </div>
+                </div>
+
+                <div class="todo-item-done">
+                    <div class="todo-text">
+                        <input type="checkbox" name="todo-checkbox" id="todo-checkbox-3" />
+                        <label class="todo-title" for="todo-checkbox-3" data-id="date"> todo 1</label>
+                    </div>
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn"></button>
+                        <button type="button" class="delete-btn"></button>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="alert-message">
+                <span class="alert"></span>
+            </div>
+            <div id="counter">
+                <span class="counter-completed"> </span>
+                <span class="counter-left"> </span>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+
+</body>
+
+</html>
